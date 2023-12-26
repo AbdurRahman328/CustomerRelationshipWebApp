@@ -1,0 +1,31 @@
+    <div class="crmblock">
+    <h1>Customer Manager Relationship</h1>
+    </div>
+    <h2>Add Customer</h2>
+    <form>
+        <div class="form-group">
+        <div class="data">
+        <label>First Name : </label>
+        <input type="text" class="form-control" [(ngModel)]="firstname" [ngModelOptions]="{standalone: true}">
+        </div>
+        </div>
+        
+        <div class="form-group">
+        <div class="data">
+        <label>Last Name :</label>
+        <input type="text" class="form-control" [(ngModel)]="lastname" [ngModelOptions]="{standalone: true}">
+        </div>
+        </div>
+
+        <div class="form-group">
+        <div class="data">
+        <label>Email :</label>
+        <input type="email" class="form-control" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+        </div>
+        </div>
+
+        <div class="formbutton">
+            <button (click) = "save()" name="save" value="save" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+    <button (click)="back()" class="btn btn-success">Back To Home</button>
